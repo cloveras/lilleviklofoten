@@ -185,6 +185,15 @@ add_action('wp_head', function () {
         "sameAs"  => $social
     ];
 
+    // FAQ page node
+    $faq = [
+        "@type" => "FAQPage",
+        "@id"   => "https://lilleviklofoten.no/en/frequently-asked-questions-faq/#faq",
+        "url"   => "https://lilleviklofoten.no/en/frequently-asked-questions-faq/",
+        "name"  => "Frequently Asked Questions — Lillevik Lofoten",
+        "inLanguage" => "en"
+    ];
+
     // LodgingBusiness node (cleaned & linked to org via brand)
     $lodging = [
         "@type" => "LodgingBusiness",
@@ -194,6 +203,7 @@ add_action('wp_head', function () {
         "description" => $description,
         "telephone"   => "+4741130944",
         "brand"       => [ "@id" => "https://lilleviklofoten.no/#organization" ],
+        "subjectOf" => [ [ "@id" => "https://lilleviklofoten.no/en/frequently-asked-questions-faq/#faq" ] ],
         "priceRange"  => "NOK 1,800–4,000 per night",
         "checkinTime" => "17:00",
         "checkoutTime"=> "10:00",
@@ -248,7 +258,7 @@ add_action('wp_head', function () {
     // Emit one JSON-LD block with @graph
     $graph = [
         "@context" => "https://schema.org",
-        "@graph"   => [ $organization, $lodging ]
+        "@graph"   => [ $organization, $lodging, $faq ]
     ];
 
     echo '<script type="application/ld+json">' .
