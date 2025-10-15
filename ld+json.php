@@ -479,7 +479,7 @@ add_action('wp_head', function () {
         "aggregateRating" => [
             "@type"      => "AggregateRating",
             "ratingValue"=> "10",
-            "reviewCount"=> 38,
+            "reviewCount"=> 42,
             "bestRating" => 10,
             "worstRating"=> 1
         ],
