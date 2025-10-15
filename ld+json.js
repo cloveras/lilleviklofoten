@@ -9,29 +9,30 @@ add_action('wp_head', function () {
 
     // Multilingual descriptions
     $descriptions = [
-        'en' => "Possibly Lofoten's best location — a peaceful beachfront holiday home on Gimsøysand with a private beach, stunning views, and total quiet. The perfect base for exploring Lofoten all year round: midnight sun in summer, northern lights in winter. Loved by couples, families, and nature seekers alike.",
-        'de' => "Möglicherweise die beste Lage auf den Lofoten – ein ruhiges Ferienhaus direkt am Strand in Gimsøysand. Ideal für Nordlichter, Mitternachtssonne und Natururlaub zu jeder Jahreszeit.",
-        'nb' => "Muligens den beste beliggenheten på Lofoten – et fredelig feriehus på stranden i Gimsøysand. Perfekt base for midnattssol, nordlys og naturopplevelser året rundt.",
-        'fr' => "Peut-être le meilleur emplacement des Lofoten — une maison de vacances paisible en bord de mer à Gimsøysand. Parfait pour observer les aurores boréales et le soleil de minuit.",
-        'ja' => "おそらくロフォーテンで最高のロケーション。ギムソイサンドの静かなビーチフロントの貸別荘。オーロラや真夜中の太陽を楽しむのに最適な拠点。",
-        'th' => "ทำเลที่ดีที่สุดในโลโฟเทน บ้านพักตากอากาศส่วนตัวริมชายหาดใน Gimsøysand สงบ เงียบ และใกล้ธรรมชาติ เหมาะทั้งฤดูร้อนและฤดูหนาว",
-        'ko' => "로포텐 최고의 위치일지도 모릅니다. Gimsøysand에 있는 조용한 해변가의 휴가용 주택으로, 북극광과 한밤중의 태양을 즐기기에 완벽한 장소입니다。",
-        'pl' => "Możliwe, że to najlepsza lokalizacja w Lofotach — spokojny domek wakacyjny przy plaży w Gimsøysand. Idealna baza wypadowa na cały rok.",
-        'es' => "Posiblemente la mejor ubicación de Lofoten: una casa de vacaciones tranquila frente a la playa en Gimsøysand. Ideal para observar auroras boreales y el sol de medianoche.",
-        'nl' => "Mogelijk de beste locatie op de Lofoten — een rustig vakantiehuis aan het strand in Gimsøysand. Perfect voor noorderlicht, middernachtzon en rustzoekers.",
-        'it' => "Forse la posizione migliore delle Lofoten — una tranquilla casa vacanze fronte mare a Gimsøysand. Ideale per godersi il sole di mezzanotte o l'aurora boreale.",
-        'pt' => "Possivelmente a melhor localização das Lofoten — uma casa de férias tranquila à beira-mar em Gimsøysand. Ideal para ver a aurora boreal e o sol da meia-noite.",
-        'zh' => "可能是洛弗敦群岛上最好的位置——Gimsøysand宁静的海滨度假屋，是全年探索极光与午夜太阳的完美基地。",
-        'fi' => "Mahdollisesti Lofotenin paras sijainti — rauhallinen rantamökki Gimsøysandissa. Täydellinen tukikohta revontulille ja keskiyön auringolle.",
-        'sv' => "Kanske Lofotens bästa läge — ett lugnt strandnära semesterhus i Gimsøysand. Perfekt för midnattssol, norrsken och naturupplevelser.",
-        'da' => "Måske den bedste beliggenhed på Lofoten – et fredeligt feriehus ved stranden i Gimsøysand. Perfekt til nordlys og midnatssol.",
-        'hi' => "संभवत: लोफोटेन में सबसे अच्छी जगह – Gimsøysand में शांत समुद्र तट पर एक अवकाश गृह। उत्तरी लाइट्स और मिडनाइट सन का आनंद लेने के लिए आदर्श।",
-        'ms' => "Mungkin lokasi terbaik di Lofoten — rumah percutian yang tenang di tepi pantai Gimsøysand. Sesuai untuk melihat cahaya utara dan matahari tengah malam.",
-        'id' => "Mungkin lokasi terbaik di Lofoten — rumah liburan tenang di tepi pantai Gimsøysand. Sempurna untuk aurora dan matahari tengah malam.",
-        'zh-TW' => "可能是羅弗敦群島最好的位置——Gimsøysand 寧靜的海濱度假小屋，全年探索北極光與午夜太陽的完美基地。",
-        'en-GB' => "Possibly the best spot in Lofoten — a peaceful beachfront retreat in Gimsøysand with stunning views. Perfect for the midnight sun and northern lights.",
-        'pt-BR' => "Possivelmente a melhor localização de Lofoten — uma casa de férias tranquila à beira-mar em Gimsøysand. Ideal para ver auroras boreais e o sol da meia-noite.",
+        'en' => "Possibly Lofoten's best location — a peaceful beachfront holiday home on Gimsøy with a private beach, stunning views, and total quiet. The perfect base for exploring Lofoten all year round: midnight sun in summer, northern lights in winter. Loved by couples, families, and nature seekers alike.",
+        'nb' => "Muligens Lofotens beste beliggenhet — et fredelig strandhus på Gimsøy med privat strand, fantastisk utsikt og total stillhet. Det perfekte utgangspunktet for å utforske Lofoten året rundt: midnattssol om sommeren, nordlys om vinteren. Elsket av par, familier og naturelskere.",
+        'de' => "Möglicherweise die beste Lage auf den Lofoten – ein friedliches Ferienhaus direkt am Strand in Gimsøy mit privatem Strand, atemberaubender Aussicht und völliger Ruhe. Der perfekte Ausgangspunkt, um die Lofoten das ganze Jahr über zu erkunden: Mitternachtssonne im Sommer, Nordlichter im Winter. Geliebt von Paaren, Familien und Naturliebhabern.",
+        'fr' => "Peut-être le meilleur emplacement des Lofoten — une paisible maison de vacances en bord de mer à Gimsøy, avec plage privée, vue imprenable et calme absolu. Le point de départ parfait pour explorer les Lofoten toute l’année : soleil de minuit en été, aurores boréales en hiver. Apprécié par les couples, les familles et les amoureux de la nature.",
+        'es' => "Posiblemente la mejor ubicación de Lofoten: una tranquila casa de vacaciones frente a la playa en Gimsøy, con playa privada, vistas increíbles y total tranquilidad. La base perfecta para explorar Lofoten todo el año: sol de medianoche en verano y auroras boreales en invierno. Amada por parejas, familias y amantes de la naturaleza.",
+        'it' => "Forse la posizione migliore delle Lofoten — una tranquilla casa vacanze fronte mare a Gimsøy con spiaggia privata, vista mozzafiato e totale tranquillità. La base perfetta per esplorare le Lofoten tutto l’anno: sole di mezzanotte d’estate e aurore boreali d’inverno. Amata da coppie, famiglie e amanti della natura.",
+        'nl' => "Mogelijk de beste locatie op de Lofoten — een rustig vakantiehuis aan het strand in Gimsøy met een privéstrand, prachtig uitzicht en volledige rust. De perfecte uitvalsbasis om de Lofoten het hele jaar door te verkennen: middernachtzon in de zomer, noorderlicht in de winter. Geliefd bij stellen, gezinnen en natuurliefhebbers.",
+        'da' => "Måske Lofotens bedste beliggenhed – et fredeligt feriehus ved stranden på Gimsøy med privat strand, fantastisk udsigt og total ro. Det perfekte udgangspunkt for at udforske Lofoten året rundt: midnatssol om sommeren og nordlys om vinteren. Elsket af par, familier og naturelskere.",
+        'sv' => "Kanske Lofotens bästa läge — ett lugnt semesterhus vid stranden på Gimsøy med privat strand, fantastisk utsikt och total stillhet. Den perfekta basen för att utforska Lofoten året runt: midnattssol på sommaren och norrsken på vintern. Älskad av par, familjer och naturälskare.",
+        'fi' => "Mahdollisesti Lofotenin paras sijainti — rauhallinen rantamökki Gimsøyssa, yksityisellä rannalla, upeilla näkymillä ja täydellisellä rauhalla. Täydellinen tukikohta Lofotenin tutkimiseen ympäri vuoden: keskiyön aurinko kesällä, revontulet talvella. Rakastettu parien, perheiden ja luonnonystäviä keskuudessa.",
+        'pl' => "Możliwe, że to najlepsza lokalizacja na Lofotach — spokojny domek wakacyjny przy plaży w Gimsøy z prywatną plażą, wspaniałym widokiem i całkowitą ciszą. Idealna baza wypadowa do zwiedzania Lofot przez cały rok: słońce o północy latem, zorza polarna zimą. Uwielbiany przez pary, rodziny i miłośników przyrody.",
+        'pt' => "Possivelmente a melhor localização das Lofoten — uma casa de férias tranquila à beira-mar em Gimsøy, com praia privada, vistas deslumbrantes e total tranquilidade. A base perfeita para explorar as Lofoten durante todo o ano: sol da meia-noite no verão e auroras boreais no inverno. Amada por casais, famílias e amantes da natureza.",
+        'pt-BR' => "Possivelmente a melhor localização das Lofoten — uma casa de férias tranquila à beira-mar em Gimsøy, com praia privativa, vistas incríveis e total tranquilidade. A base perfeita para explorar as Lofoten o ano todo: sol da meia-noite no verão e auroras boreais no inverno. Amada por casais, famílias e amantes da natureza.",
+        'zh' => "可能是洛弗敦群岛上最好的位置——位于Gimsøy的宁静海滨度假屋，配有私人沙滩、壮丽景色和绝对的宁静。全年探索洛弗敦的完美基地：夏季的午夜太阳，冬季的北极光。深受情侣、家庭和自然爱好者喜爱。",
+        'zh-TW' => "可能是羅弗敦群島最棒的位置——位於 Gimsøy 的寧靜海濱度假小屋，擁有私人沙灘、壯麗景觀與絕對的寧靜。全年探索羅弗敦的完美基地：夏季的午夜太陽與冬季的極光。深受情侶、家庭與自然愛好者喜愛。",
+        'ja' => "おそらくロフォーテンで最高のロケーション。ギムソイの静かなビーチフロントの貸別荘で、プライベートビーチ、美しい景色、そして静けさを楽しめます。一年を通してロフォーテンを探検するのに最適な拠点です。夏は白夜、冬はオーロラを満喫。カップルや家族、自然好きに人気です。",
+        'ko' => "로포텐 최고의 위치일지도 모릅니다. Gimsøy에 있는 조용한 해변가 휴양주택으로, 전용 해변과 멋진 전망, 완벽한 고요함을 갖추고 있습니다. 일년 내내 로포텐을 탐험하기에 완벽한 베이스캠프입니다. 여름엔 백야, 겨울엔 오로라를 즐기세요. 커플, 가족, 자연을 사랑하는 이들에게 사랑받는 장소입니다.",
+        'th' => "อาจเป็นทำเลที่ดีที่สุดในโลโฟเทน — บ้านพักตากอากาศริมชายหาดอันเงียบสงบใน Gimsøy พร้อมชายหาดส่วนตัว วิวสวย และความสงบสมบูรณ์แบบ เหมาะสำหรับการท่องเที่ยวโลโฟเทนตลอดปี ทั้งพระอาทิตย์เที่ยงคืนในฤดูร้อนและแสงเหนือในฤดูหนาว เป็นที่รักของคู่รัก ครอบครัว และคนรักธรรมชาติ.",
+        'hi' => "संभवतः लोफोटेन में सबसे अच्छी जगह — Gimsøy में शांत समुद्र तट पर एक अवकाश गृह, निजी बीच, शानदार दृश्य और पूर्ण शांति के साथ। पूरे साल लोफोटेन घूमने का आदर्श ठिकाना: गर्मियों में मिडनाइट सन और सर्दियों में नॉर्दर्न लाइट्स। जोड़ों, परिवारों और प्रकृति प्रेमियों द्वारा पसंद किया गया।",
+        'ms' => "Mungkin lokasi terbaik di Lofoten — rumah percutian yang tenang di tepi pantai Gimsøy dengan pantai peribadi, pemandangan menakjubkan dan ketenangan mutlak. Pangkalan sempurna untuk meneroka Lofoten sepanjang tahun: matahari tengah malam pada musim panas, cahaya utara pada musim sejuk. Diminati oleh pasangan, keluarga dan pencinta alam.",
+        'id' => "Mungkin lokasi terbaik di Lofoten — rumah liburan tenang di tepi pantai Gimsøy dengan pantai pribadi, pemandangan menakjubkan, dan ketenangan total. Tempat ideal untuk menjelajahi Lofoten sepanjang tahun: matahari tengah malam di musim panas, cahaya utara di musim dingin. Disukai oleh pasangan, keluarga, dan pecinta alam.",
+        'en-GB' => "Possibly the best spot in Lofoten — a peaceful beachfront holiday home on Gimsøy with a private beach, stunning views, and complete calm. The perfect base for exploring Lofoten all year round: midnight sun in summer, northern lights in winter. Loved by couples, families, and nature lovers alike.",
     ];
+
 
     // Multilingual amenities - re-sorted by importance and fully translated
     $amenities = [
@@ -66,7 +67,7 @@ add_action('wp_head', function () {
         "@type" => "PostalAddress",
         "streetAddress" => "Årstrandveien 663",
         "postalCode" => "8314",
-        "addressLocality" => "Gimsøysand",
+        "addressLocality" => "Gimsøy",
         "addressRegion" => "Nordland",
         "addressCountry" => "NO"
     ];
