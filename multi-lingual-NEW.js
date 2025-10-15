@@ -1,4 +1,3 @@
-<?php
 add_action('wp_head', function () {
     $locale_full = get_locale();
     // Normalize locale codes for languages with region/script variants
@@ -200,7 +199,7 @@ add_action('wp_head', function () {
         "petsAllowed" => false,
         "smokingAllowed" => false,
         "address" => $address,
-        "hasMap" => "https://maps.app.goo.gl/nKPJn2wFm5uWBZTg7",
+		"hasMap" => "https://maps.app.goo.gl/nKPJn2wFm5uWBZTg7",
         "geo" => [
             "@type" => "GeoCoordinates",
             "latitude"  => 68.330081,
