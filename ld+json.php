@@ -1,3 +1,5 @@
+add_filter( 'aioseo_schema_disable', '__return_true' );
+
 add_action('wp_head', function () {
     $locale_full = get_locale();
     // Normalize locale codes for languages with region/script variants
