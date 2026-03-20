@@ -1,1 +1,3 @@
-Lillevik Lofoten: Stuff
+# Lillevik Lofoten
+
+Helper files for https://lilleviklofoten.no/
